@@ -26,9 +26,7 @@ The installed packages are describe in the table below.
 |jupyterlab_latex|3.1.0|
 |jupyterlab-git|0.37.1|
 |dask-kubernetes|2022.5.2|
-|elyra|3.10.1|
-|elyra-pipeline-editor-extension|3.10.1|
-|elyra-code-viewer-extension|3.10.1|
+|elyra[all]|3.10.1|
 |smart-open|6.0.0|
 |boto3|1.24.37|
 |dask|2022.7.1|

@@ -26,9 +26,7 @@ RUN pip3 install --user voila==0.3.6
 RUN pip3 install --user jupyterlab_latex==3.1.0
 RUN pip3 install --user jupyterlab-git==0.37.1
 RUN pip3 install --user dask-kubernetes==2022.5.2
-RUN pip3 install --user elyra==3.10.1
-RUN pip3 install --user elyra-pipeline-editor-extension==3.10.1
-RUN pip3 install --user elyra-code-viewer-extension==3.10.1
+RUN pip3 install --user elyra[all]==3.10.1
 RUN pip3 install --user smart-open==6.0.0
 RUN pip3 install --user boto3==1.24.37
 RUN pip3 install --user dask==2022.7.1
@@ -43,5 +41,5 @@ RUN pip3 install --user ipython-sql==0.4.1
 
 RUN jupyter server extension enable elyra
 
-
+ADD gitignore /home/jupyter/.gitignore
 ENTRYPOINT bash -c "entrypoint.sh"
