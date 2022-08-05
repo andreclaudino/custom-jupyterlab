@@ -38,6 +38,7 @@ RUN pip3 install --user scikit-learn==1.1.1
 RUN pip3 install --user SQLAlchemy==1.4.39
 RUN pip3 install --user PyHive[trino]==0.6.5
 RUN pip3 install --user ipython-sql==0.4.1
+RUN pip3 install --user awsebcli==3.20.3
 
 RUN jupyter server extension enable elyra
 
