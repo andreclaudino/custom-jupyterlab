@@ -38,4 +38,3 @@ The installed packages are describe in the table below.
 |SQLAlchemy|1.4.39|
 |PyHive[trino]|0.6.5|
 |ipython-sql|0.4.1|
-|awsebcli|3.20.3|
