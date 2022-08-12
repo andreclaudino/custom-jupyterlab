@@ -14,6 +14,6 @@ cd $MOUNT_PATH/notebooks/
 echo "export PS1=\"(\A)> \"" >> ~/.bashrc
 echo "cd $MOUNT_PATH/notebooks/" >> ~/.bashrc
 
-cp -r /root/ssh-keys/* /root/.ssh/
+cp -r /root/ssh-keys/ /root/.ssh
 
 jupyter-lab --ip=0.0.0.0 --no-browser --allow-root --notebook-dir=$MOUNT_PATH/notebooks/
