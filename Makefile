@@ -1,5 +1,5 @@
 DOCKER_IMAGE=andreclaudino/jupyterlab
-DOCKER_TAG=1.0.0
+DOCKER_TAG=1.0.1
 
 docker/image-py3.10:
 	docker build -t $(DOCKER_IMAGE):$(DOCKER_TAG)-py3.10 docker/ -f docker/Dockerfile --build-arg BASE_IMAGE=python:3.10-slim-buster
