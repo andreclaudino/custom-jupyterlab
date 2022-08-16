@@ -25,11 +25,10 @@ RUN pip3 install --user jupyterlab==3.4.3
 RUN pip3 install --user voila==0.3.6
 RUN pip3 install --user jupyterlab_latex==3.1.0
 RUN pip3 install --user jupyterlab-git==0.37.1
-RUN pip3 install --user dask-kubernetes==2022.5.2
 RUN pip3 install --user elyra[all]==3.10.1
 RUN pip3 install --user smart-open==6.0.0
 RUN pip3 install --user boto3==1.24.37
-RUN pip3 install --user dask==2022.7.1
+RUN pip3 install --user dask[complete]==2022.8.0
 RUN pip3 install --user pandas==1.4.3
 RUN pip3 install --user geopandas==0.11.1
 RUN pip3 install --user bokeh==2.4.3
@@ -38,6 +37,9 @@ RUN pip3 install --user scikit-learn==1.1.1
 RUN pip3 install --user SQLAlchemy==1.4.39
 RUN pip3 install --user PyHive[trino]==0.6.5
 RUN pip3 install --user ipython-sql==0.4.1
+RUN pip3 install --user pyarrow==9.0.0
+RUN pip3 install --user s3fs==2022.7.1
+RUN pip3 install --user dask-kubernetes==2022.7.0
 
 RUN jupyter server extension enable elyra
 
